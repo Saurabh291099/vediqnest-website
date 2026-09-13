@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdf8;
+    color: #1a4237;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+  }
+
+  a {
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  button {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
+
+@layer components {
+  /* Button styles */
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #2d7860;
+    color: #fdfdf8;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms;
+  }
+  .btn-primary:hover {
+    background-color: #25634f;
+  }
+
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #2d7860;
+    color: #2d7860;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms;
+  }
+  .btn-secondary:hover {
+    background-color: #f0f7f4;
+  }
+
+  .btn-ghost {
+    padding: 0.75rem 1.5rem;
+    color: #2d7860;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    transition: color 300ms;
+  }
+  .btn-ghost:hover {
+    color: #25634f;
+  }
+
+  .btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 300ms;
+  }
+
+  /* Layout styles */
+  .section-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Typography */
+  .heading-hero {
+    font-size: 2.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: #1a4237;
+    line-height: 1.2;
+  }
+
+  .heading-section {
+    font-size: 1.875rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: #1a4237;
+    margin-bottom: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1.125rem;
+    color: #25634f;
+    font-weight: 500;
+  }
+
+  .body-lg {
+    font-size: 1.125rem;
+    color: #3d4940;
+    line-height: 1.625;
+  }
+
+  /* Card styles */
+  .card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: box-shadow 300ms;
+  }
+  .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form styles */
+  .input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #f0ede0;
+    border-radius: 0.5rem;
+    background-color: #faf9f1;
+    color: #1a4237;
+    transition: all 300ms;
+  }
+  .input-field::placeholder {
+    color: #7d6d63;
+  }
+  .input-field:focus {
+    outline: none;
+    border-color: #2d7860;
+    background-color: white;
+  }
+
+  .input-error {
+    border-color: #ef4444;
+  }
+  .input-error:focus {
+    border-color: #dc2626;
+  }
+
+  .container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #2d7860, #e4b236);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
