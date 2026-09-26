@@ -10,8 +10,8 @@ import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
 
 export const WeekendProgram = () => {
   useSEOMetaTags({
-    title: 'Weekend Program for Kids in Noida | VediqPath',
-    description: 'Join VediqPath\'s weekend program for children aged 6–12. Experience storytelling, yoga, creativity and values-based learning.',
+    title: 'Weekend Program for Kids in Noida | VedicNest',
+    description: 'Join the VedicNest weekend program for children aged 6–12. Experience storytelling, yoga, creativity and values-based learning.',
     keywords: 'weekend program kids Noida, kids activities, creative learning',
   });
 
@@ -64,7 +64,7 @@ export const WeekendProgram = () => {
         <Container>
           <SectionHeading
             title="What Happens During a Session?"
-            subtitle="A typical VediqPath weekend experience"
+            subtitle="A typical VedicNest weekend experience"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-2">
@@ -104,7 +104,7 @@ export const WeekendProgram = () => {
         <Container>
           <SectionHeading
             title="Who Is It For?"
-            subtitle="The ideal VediqPath participant"
+            subtitle="The ideal VedicNest participant"
           />
 
           <div className="max-w-3xl mx-auto">
@@ -154,7 +154,7 @@ export const WeekendProgram = () => {
 
             <div className="bg-white p-8 rounded-xl border-2 border-saffron-200">
               <p className="text-center text-vedic-800 font-medium">
-                <span className="font-semibold">Important:</span> VediqPath is not a therapeutic program, medical intervention, or replacement for school education. It's a complementary weekend enrichment experience designed to support holistic development.
+                <span className="font-semibold">Important:</span> VedicNest is not a therapeutic program, medical intervention, or replacement for school education. It's a complementary weekend enrichment experience designed to support holistic development.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ export const WeekendProgram = () => {
         <Container>
           <SectionHeading
             title="Book a Trial Session"
-            subtitle="Start your child's VediqPath journey"
+            subtitle="Start your child's VedicNest journey"
             centered={true}
           />
 

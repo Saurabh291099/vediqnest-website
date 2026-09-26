@@ -7,11 +7,12 @@ import { AnimatedSection } from '../components/common/AnimatedSection';
 import { ProgramCard } from '../components/cards';
 import { programs } from '../data/programs';
 import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
+import { handleImageError } from '../lib/images';
 
 export const Programs = () => {
   useSEOMetaTags({
-    title: 'Vedic Stories, Yoga & Creativity for Kids | VediqPath Programs',
-    description: 'Explore VediqPath\'s comprehensive programs: Vedic stories, yoga & mindfulness, art & creativity, and values-based learning for children aged 6–12.',
+    title: 'Vedic Stories, Yoga & Creativity for Kids | VedicNest Programs',
+    description: 'Explore VedicNest programs: Vedic stories, yoga & mindfulness, art & creativity, and values-based learning for children aged 6–12.',
     keywords: 'yoga kids, vedic stories, creative activities, mindfulness programs, values education',
   });
 
@@ -92,6 +93,7 @@ export const Programs = () => {
                       {index === 0 && (
                         <img
                           src="https://images.unsplash.com/photo-1507842845857-c435f2e2b88f?w=600&h=600&fit=crop"
+                          onError={handleImageError}
                           alt="Vedic stories for children"
                           className="w-full h-full object-cover"
                           loading="lazy"
@@ -99,7 +101,8 @@ export const Programs = () => {
                       )}
                       {index === 1 && (
                         <img
-                          src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&h=600&fit=crop"
+                          src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop&q=80"
+                          onError={handleImageError}
                           alt="Yoga and mindfulness for kids"
                           className="w-full h-full object-cover"
                           loading="lazy"
@@ -108,6 +111,7 @@ export const Programs = () => {
                       {index === 2 && (
                         <img
                           src="https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=600&h=600&fit=crop"
+                          onError={handleImageError}
                           alt="Art and creativity activities"
                           className="w-full h-full object-cover"
                           loading="lazy"
@@ -115,7 +119,8 @@ export const Programs = () => {
                       )}
                       {index === 3 && (
                         <img
-                          src="https://images.unsplash.com/photo-1516321318423-f06f70db51ca?w=600&h=600&fit=crop"
+                          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=600&fit=crop&q=80"
+                          onError={handleImageError}
                           alt="Values and life skills learning"
                           className="w-full h-full object-cover"
                           loading="lazy"
@@ -135,7 +140,7 @@ export const Programs = () => {
         <Container>
           <h2 className="heading-section mb-6">Curious to See Them in Action?</h2>
           <p className="subheading text-vedic-600 mb-12 max-w-2xl mx-auto">
-            Book a trial session and let your child experience VediqPath firsthand.
+            Book a trial session and let your child experience VedicNest firsthand.
           </p>
           <Link to="/contact">
             <Button variant="primary" size="lg">

@@ -5,17 +5,18 @@ import { Container, Section } from '../components/common/Container';
 import { SectionHeading } from '../components/common/SectionHeading';
 import { AnimatedSection } from '../components/common/AnimatedSection';
 import { ProgramCard, TestimonialCard } from '../components/cards';
-import { programs, whyVediqPath, sessionFlow } from '../data/programs';
+import { programs, whyVedicNest, sessionFlow } from '../data/programs';
 import { testimonials } from '../data/testimonials';
 import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
 import * as LucideIcons from 'lucide-react';
+import { handleImageError } from '../lib/images';
 
 const HeroImage = 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&h=600&fit=crop&q=80';
 
 export const Home = () => {
   useSEOMetaTags({
-    title: 'VediqPath | Vedic Learning, Yoga & Creative Experiences for Kids in Noida',
-    description: 'VediqPath helps children aged 6–12 build focus, confidence and values through Vedic stories, yoga, creativity and meaningful weekend experiences in Noida.',
+    title: 'VedicNest | Vedic Learning, Yoga & Creative Experiences for Kids in Noida',
+    description: 'VedicNest helps children aged 6–12 build focus, confidence and values through Vedic stories, yoga, creativity and meaningful weekend experiences in Noida.',
     image: HeroImage,
     keywords: 'vedic learning kids, vedic stories children, yoga for kids Noida, weekend program',
   });
@@ -33,7 +34,7 @@ export const Home = () => {
             >
               <div className="mb-6">
                 <span className="text-sm font-medium text-saffron-600 uppercase tracking-wider">
-                  VEDIQ पथ • NOIDA
+                  VEDICNEST • NOIDA
                 </span>
               </div>
 
@@ -77,7 +78,8 @@ export const Home = () => {
 
               <img
                 src={HeroImage}
-                alt="Children learning at VediqPath"
+                onError={handleImageError}
+                alt="Children learning at VedicNest"
                 className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
                 loading="lazy"
               />
@@ -92,11 +94,11 @@ export const Home = () => {
           <div className="max-w-3xl mx-auto text-center">
             <SectionHeading
               title="More Than a Weekend Program"
-              subtitle="VediqPath creates meaningful learning experiences where children can discover the wisdom of Vedic traditions while developing focus, confidence, creativity and strong values."
+              subtitle="VedicNest creates meaningful learning experiences where children can discover the wisdom of Vedic traditions while developing focus, confidence, creativity and strong values."
             />
 
             <Link to="/about">
-              <Button variant="secondary">Discover VediqPath</Button>
+              <Button variant="secondary">Discover VedicNest</Button>
             </Link>
           </div>
         </Container>
@@ -118,16 +120,16 @@ export const Home = () => {
         </Container>
       </Section>
 
-      {/* Why VediqPath */}
+      {/* Why VedicNest */}
       <Section className="bg-white">
         <Container>
           <SectionHeading
             title="Helping Children Grow From Within"
-            subtitle="Four pillars of VediqPath development"
+            subtitle="Four pillars of VedicNest development"
           />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {whyVediqPath.map((item, index) => {
+            {whyVedicNest.map((item, index) => {
               const IconComponent = (LucideIcons as Record<string, any>)[item.icon] || LucideIcons.Lightbulb;
               return (
                 <AnimatedSection key={item.id} delay={index * 0.1}>
@@ -202,7 +204,7 @@ export const Home = () => {
                 Tradition That Comes Alive
               </h2>
               <p className="body-lg text-cream-100 mb-8">
-                VediqPath also creates and participates in engaging devotional and cultural experiences. From vibrant bhajan gatherings to community celebrations, we bring traditional Indian culture to life in ways that inspire and connect families.
+                VedicNest also creates and participates in engaging devotional and cultural experiences. From vibrant bhajan gatherings to community celebrations, we bring traditional Indian culture to life in ways that inspire and connect families.
               </p>
               <Link to="/events">
                 <Button variant="secondary" size="lg">
@@ -211,7 +213,8 @@ export const Home = () => {
               </Link>
             </div>
             <motion.img
-              src="https://images.unsplash.com/photo-1501386761578-e0db3814a4c5?w=600&h=600&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=600&fit=crop&q=80"
+              onError={handleImageError}
               alt="Bhajan clubbing event"
               className="rounded-xl w-full h-auto shadow-2xl"
               loading="lazy"

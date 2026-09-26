@@ -9,8 +9,8 @@ import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
 
 export const About = () => {
   useSEOMetaTags({
-    title: 'About VediqPath | Vedic & Values-Based Learning for Kids',
-    description: 'Discover VediqPath\'s approach to child development combining Vedic traditions with modern, engaging activities for children aged 6–12.',
+    title: 'About VedicNest | Vedic & Values-Based Learning for Kids',
+    description: 'Discover the VedicNest approach to child development, combining Vedic traditions with modern, engaging activities for children aged 6–12.',
     keywords: 'vedic education, values-based learning, child development, holistic learning',
   });
 
@@ -44,7 +44,7 @@ export const About = () => {
 
               <AnimatedSection delay={0.1}>
                 <p className="body-lg text-vedic-800 mb-8 leading-relaxed">
-                  VediqPath brings together elements of India's Vedic and cultural traditions with engaging activities designed for children aged 6–12.
+                  VedicNest brings together elements of India's Vedic and cultural traditions with engaging activities designed for children aged 6–12.
                 </p>
               </AnimatedSection>
 
@@ -61,7 +61,7 @@ export const About = () => {
       {/* Approach */}
       <Section className="bg-cream-50">
         <Container>
-          <SectionHeading title="Our Approach" subtitle="Four pillars of VediqPath" />
+          <SectionHeading title="Our Approach" subtitle="Four pillars of VedicNest" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {pillars.map((pillar, index) => (
@@ -91,7 +91,7 @@ export const About = () => {
         <Container>
           <SectionHeading
             title="What We Believe"
-            subtitle="Principles that guide VediqPath"
+            subtitle="Principles that guide VedicNest"
             centered={true}
           />
 
@@ -139,7 +139,7 @@ export const About = () => {
         <Container>
           <h2 className="heading-section mb-6">Ready to Begin?</h2>
           <p className="subheading text-vedic-600 mb-12 max-w-2xl mx-auto">
-            Join us for a trial session and experience the VediqPath difference.
+            Join us for a trial session and experience the VedicNest difference.
           </p>
           <Link to="/contact">
             <Button variant="primary" size="lg">

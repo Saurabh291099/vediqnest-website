@@ -78,7 +78,7 @@ export const pillars = [
   },
 ];
 
-export const whyVediqPath = [
+export const whyVedicNest = [
   {
     id: 'focus',
     title: 'Focus',

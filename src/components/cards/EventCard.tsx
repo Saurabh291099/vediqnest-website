@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Event } from '../../types';
+import { handleImageError } from '../../lib/images';
 
 interface EventCardProps {
   event: Event;
@@ -18,6 +19,7 @@ export const EventCard = ({ event, index = 0 }: EventCardProps) => (
     <div className="relative h-64 overflow-hidden bg-vedic-100">
       <motion.img
         src={event.image}
+        onError={handleImageError}
         alt={event.title}
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         loading="lazy"

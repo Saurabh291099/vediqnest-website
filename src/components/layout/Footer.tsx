@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Instagram } from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,8 +13,8 @@ export const Footer = () => {
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-3xl">🕉️</span>
                 <div>
-                  <div className="font-display text-xl font-600">VEDIQ</div>
-                  <div className="text-sm text-saffron-300">पथ</div>
+                  <div className="font-display text-xl font-600">VedicNest</div>
+                  <div className="text-sm text-saffron-300">VEDIC LEARNING</div>
                 </div>
               </div>
               <p className="text-cream-200 text-sm">
@@ -56,7 +55,7 @@ export const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link to="/about" className="text-cream-200 hover:text-cream-50 transition-colors">
-                    About VediqPath
+                    About VedicNest
                   </Link>
                 </li>
                 <li>
@@ -72,15 +71,6 @@ export const Footer = () => {
               <h4 className="font-display font-600 mb-4">Connect</h4>
               <div className="space-y-3">
                 <p className="text-sm text-cream-200">📍 Noida, Uttar Pradesh</p>
-                <a
-                  href="https://www.instagram.com/vediqpath/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-cream-200 hover:text-cream-50 transition-colors text-sm"
-                >
-                  <Instagram size={18} />
-                  @vediqpath
-                </a>
               </div>
             </div>
           </div>
@@ -88,7 +78,7 @@ export const Footer = () => {
           {/* Bottom */}
           <div className="border-t border-vedic-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-cream-200">
-              <p>&copy; {currentYear} VediqPath. All rights reserved.</p>
+              <p>&copy; {currentYear} VedicNest. All rights reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-cream-50 transition-colors">
                   Privacy Policy

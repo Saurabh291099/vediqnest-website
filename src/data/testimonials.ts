@@ -1,13 +1,13 @@
 import { Testimonial } from '../types';
 
-// Placeholder testimonials - to be replaced with real client testimonials from Instagram
+// Placeholder testimonials - to be replaced with real client testimonials from families
 export const testimonials: Testimonial[] = [
   {
     id: 'testimonial-1',
     author: 'Placeholder - Client Testimonial',
     child: 'Child Name',
     childAge: 8,
-    text: 'This space will be filled with real parent testimonials from VediqPath participants. Replace with actual feedback from your Instagram or clients.',
+    text: 'This space will be filled with real parent testimonials from VedicNest participants. Replace with actual feedback from families or clients.',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=testimonial1',
   },
   {
@@ -15,7 +15,7 @@ export const testimonials: Testimonial[] = [
     author: 'Placeholder - Another Parent',
     child: 'Another Child',
     childAge: 9,
-    text: 'Share your authentic experience and how VediqPath has impacted your child\'s learning and development.',
+    text: 'Share your authentic experience and how VedicNest has impacted your child\'s learning and development.',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=testimonial2',
   },
   {

@@ -7,20 +7,15 @@ interface JsonLdObject {
 export const generateOrganizationSchema = (): JsonLdObject => ({
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
-  name: 'VediqPath',
-  alternateName: 'VEDIQ पथ',
+  name: 'VedicNest',
+  alternateName: 'VedicNest',
   description: 'Vedic learning and cultural experiences for children aged 6-12',
-  url: 'https://vediqpath.com',
-  logo: 'https://vediqpath.com/logo.png',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Noida',
     addressRegion: 'Uttar Pradesh',
     addressCountry: 'IN',
   },
-  sameAs: [
-    'https://www.instagram.com/vediqpath/',
-  ],
   educationalLevel: 'Elementary',
   areaServed: 'Noida',
 });

@@ -1,6 +1,6 @@
-# VediqPath Website
+# VedicNest Website
 
-A premium, modern, responsive website for VediqPath — Vedic learning, yoga, creativity and cultural experiences for children aged 6–12 in Noida.
+A premium, modern, responsive website for VedicNest — Vedic learning, yoga, creativity and cultural experiences for children aged 6–12 in Noida.
 
 ## 🚀 Quick Start
 
@@ -10,7 +10,7 @@ A premium, modern, responsive website for VediqPath — Vedic learning, yoga, cr
 ### Installation
 
 ```bash
-cd vediqpath-website
+cd vedicnest-website
 npm install
 ```
 
@@ -99,7 +99,7 @@ src/
 The following files contain placeholder data that should be updated with real client information:
 
 1. **src/data/testimonials.ts** - Replace with actual parent testimonials
-2. **src/data/gallery.ts** - Replace image URLs with real VediqPath photos
+2. **src/data/gallery.ts** - Replace image URLs with real VedicNest photos
 3. **src/data/events.ts** - Add actual event dates, prices, and details
 4. **Contact information** - Update with real address, phone, email (when available)
 
@@ -109,7 +109,7 @@ The following files contain placeholder data that should be updated with real cl
 Hero section with strong value proposition, programs overview, benefits, and CTAs.
 
 ### About
-Philosophy, approach, core values, and mission of VediqPath.
+Philosophy, approach, core values, and mission of VedicNest.
 
 ### Programs
 Detailed breakdown of all four programs with descriptions and benefits.
@@ -166,8 +166,8 @@ When making updates:
 
 ## 📄 License
 
-© 2026 VediqPath. All rights reserved.
+© 2026 VedicNest. All rights reserved.
 
 ## 👨‍💻 Support
 
-For questions or issues, reach out to the VediqPath team through the contact form or Instagram @vediqpath.
+For questions or issues, reach out to the VedicNest team through the contact form.

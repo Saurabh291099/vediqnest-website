@@ -3,14 +3,14 @@ import { SectionHeading } from '../components/common/SectionHeading';
 import { AnimatedSection } from '../components/common/AnimatedSection';
 import { ContactForm } from '../components/forms/ContactForm';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Instagram } from 'lucide-react';
+import { Mail, MapPin, Users } from 'lucide-react';
 import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
 
 export const Contact = () => {
   useSEOMetaTags({
-    title: 'Book a Trial Session | VediqPath Noida',
-    description: 'Get in touch with VediqPath to book a trial session or learn more about our programs for children aged 6–12.',
-    keywords: 'contact vediqpath, book trial, kids programs Noida',
+    title: 'Book a Trial Session | VedicNest Noida',
+    description: 'Get in touch with VedicNest to book a trial session or learn more about our programs for children aged 6–12.',
+    keywords: 'contact vedicnest, book trial, kids programs Noida',
   });
 
   return (
@@ -27,7 +27,7 @@ export const Contact = () => {
               Let's Begin Their Journey
             </h1>
             <p className="body-lg text-vedic-700">
-              Have a question about the weekend program or want your child to experience VediqPath? Get in touch with us.
+              Have a question about the weekend program or want your child to experience VedicNest? Get in touch with us.
             </p>
           </motion.div>
         </Container>
@@ -65,18 +65,11 @@ export const Contact = () => {
               <div className="card p-8 text-center">
                 <div className="flex justify-center mb-4">
                   <div className="w-14 h-14 rounded-full bg-vedic-100 flex items-center justify-center">
-                    <Instagram className="text-vedic-600" size={28} />
+                    <Users className="text-vedic-600" size={28} />
                   </div>
                 </div>
-                <h3 className="font-display font-600 text-vedic-900 mb-2">Connect</h3>
-                <a
-                  href="https://www.instagram.com/vediqpath/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-vedic-600 hover:text-vedic-700 font-medium"
-                >
-                  @vediqpath
-                </a>
+                <h3 className="font-display font-600 text-vedic-900 mb-2">For Children</h3>
+                <p className="text-vedic-700">Designed for ages 6–12</p>
               </div>
             </AnimatedSection>
           </div>
@@ -110,7 +103,7 @@ export const Contact = () => {
               },
               {
                 q: 'How much does a trial cost?',
-                a: 'We offer trial sessions to help you experience VediqPath firsthand. Pricing details will be shared when we contact you.',
+                a: 'We offer trial sessions to help you experience VedicNest firsthand. Pricing details will be shared when we contact you.',
               },
               {
                 q: 'What if my child is very shy?',
@@ -118,7 +111,7 @@ export const Contact = () => {
               },
               {
                 q: 'Do I need to provide any materials?',
-                a: 'No. VediqPath provides all necessary materials and equipment. Just bring an open mind and willingness to explore!',
+                a: 'No. VedicNest provides all necessary materials and equipment. Just bring an open mind and willingness to explore!',
               },
               {
                 q: 'How often are programs held?',
@@ -143,7 +136,7 @@ export const Contact = () => {
 
           <div className="mt-12 text-center bg-vedic-50 p-8 rounded-xl">
             <p className="text-vedic-800">
-              <span className="font-semibold">Didn't find an answer?</span> Reach out using the form above or follow us on Instagram @vediqpath for more information.
+              <span className="font-semibold">Didn't find an answer?</span> Reach out using the form above and we'll be happy to help.
             </p>
           </div>
         </Container>

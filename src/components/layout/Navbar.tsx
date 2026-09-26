@@ -46,8 +46,8 @@ export const Navbar = () => {
         >
           <span className="text-3xl">🕉️</span>
           <div className="hidden sm:block">
-            <div className="leading-tight">VEDIQ</div>
-            <div className="text-sm text-saffron-600">पथ</div>
+            <div className="leading-tight">VedicNest</div>
+            <div className="text-sm text-saffron-600">VEDIC LEARNING</div>
           </div>
         </Link>
 

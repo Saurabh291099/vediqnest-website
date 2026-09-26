@@ -23,39 +23,39 @@ export const getMetaTags = (page: string) => {
   
   const metaTags: Record<string, { title: string; description: string; keywords: string }> = {
     home: {
-      title: 'VediqPath | Vedic Learning, Yoga & Creative Experiences for Kids in Noida',
-      description: 'VediqPath helps children aged 6–12 build focus, confidence and values through Vedic stories, yoga, creativity and meaningful weekend experiences in Noida.',
+      title: 'VedicNest | Vedic Learning, Yoga & Creative Experiences for Kids in Noida',
+      description: 'VedicNest helps children aged 6–12 build focus, confidence and values through Vedic stories, yoga, creativity and meaningful weekend experiences in Noida.',
       keywords: 'vedic learning for kids, vedic stories, yoga for kids Noida, weekend program kids, holistic learning children, values-based education',
     },
     about: {
-      title: 'About VediqPath | Vedic & Values-Based Learning for Kids',
-      description: 'Discover VediqPath\'s approach to child development combining Vedic traditions with modern, engaging activities for children aged 6–12.',
+      title: 'About VedicNest | Vedic & Values-Based Learning for Kids',
+      description: 'Discover VedicNest\'s approach to child development combining Vedic traditions with modern, engaging activities for children aged 6–12.',
       keywords: 'vedic education, values-based learning, child development, Indian culture for kids, mindfulness for children',
     },
     programs: {
-      title: 'Vedic Stories, Yoga & Creativity for Kids | VediqPath Programs',
-      description: 'Explore VediqPath\'s comprehensive programs: Vedic stories, yoga & mindfulness, art & creativity, and values-based learning.',
+      title: 'Vedic Stories, Yoga & Creativity for Kids | VedicNest Programs',
+      description: 'Explore VedicNest\'s comprehensive programs: Vedic stories, yoga & mindfulness, art & creativity, and values-based learning.',
       keywords: 'yoga for kids, vedic stories kids, creative activities children, mindfulness programs, values education',
     },
     weekend: {
-      title: 'Weekend Program for Kids in Noida | VediqPath',
-      description: 'Join VediqPath\'s weekend program for children aged 6–12. Experience storytelling, yoga, creativity and values-based learning.',
+      title: 'Weekend Program for Kids in Noida | VedicNest',
+      description: 'Join VedicNest\'s weekend program for children aged 6–12. Experience storytelling, yoga, creativity and values-based learning.',
       keywords: 'weekend program kids Noida, kids activities Noida, creative learning, vedic culture children',
     },
     events: {
-      title: 'VediqPath Events & Cultural Experiences | Noida',
-      description: 'Discover VediqPath\'s devotional and cultural experiences including bhajan gatherings and community events.',
+      title: 'VedicNest Events & Cultural Experiences | Noida',
+      description: 'Discover VedicNest\'s devotional and cultural experiences including bhajan gatherings and community events.',
       keywords: 'bhajans for kids, devotional events, cultural gatherings Noida, family events',
     },
     gallery: {
-      title: 'VediqPath Gallery | Children Learning, Stories & Community',
-      description: 'Browse our gallery of VediqPath sessions, events and community moments showcasing children learning and growing.',
-      keywords: 'vediqpath gallery, children learning photos, yoga classes, cultural events',
+      title: 'VedicNest Gallery | Children Learning, Stories & Community',
+      description: 'Browse our gallery of VedicNest sessions, events and community moments showcasing children learning and growing.',
+      keywords: 'vedicnest gallery, children learning photos, yoga classes, cultural events',
     },
     contact: {
-      title: 'Book a Trial Session | VediqPath Noida',
-      description: 'Get in touch with VediqPath to book a trial session or learn more about our programs.',
-      keywords: 'contact vediqpath, book trial session, kids programs Noida',
+      title: 'Book a Trial Session | VedicNest Noida',
+      description: 'Get in touch with VedicNest to book a trial session or learn more about our programs.',
+      keywords: 'contact vedicnest, book trial session, kids programs Noida',
     },
   };
 

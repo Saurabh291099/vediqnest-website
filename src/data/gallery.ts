@@ -3,14 +3,14 @@ import { GalleryItem } from '../types';
 export const galleryItems: GalleryItem[] = [
   {
     id: 'gallery-1',
-    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&h=600&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=600&fit=crop&q=80',
     title: 'Children Learning',
     category: 'learning',
-    alt: 'Children engaged in a learning activity at VediqPath',
+    alt: 'Children engaged in a learning activity at VedicNest',
   },
   {
     id: 'gallery-2',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=600&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop&q=80',
     title: 'Yoga Practice',
     category: 'yoga',
     alt: 'Children practicing yoga together',
@@ -31,21 +31,21 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: 'gallery-5',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=600&fit=crop&q=80',
     title: 'Community Moment',
     category: 'community',
-    alt: 'Community gathering at VediqPath',
+    alt: 'Community gathering at VedicNest',
   },
   {
     id: 'gallery-6',
-    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=600&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=600&fit=crop&q=80',
     title: 'Cultural Event',
     category: 'events',
     alt: 'Cultural event with children and families',
   },
   {
     id: 'gallery-7',
-    image: 'https://images.unsplash.com/photo-1506361197048-46a149213204?w=600&h=600&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop&q=80',
     title: 'Mindful Practice',
     category: 'mindfulness',
     alt: 'Mindfulness and meditation practice',

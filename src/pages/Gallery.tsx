@@ -3,15 +3,14 @@ import { SectionHeading } from '../components/common/SectionHeading';
 import { AnimatedSection } from '../components/common/AnimatedSection';
 import { galleryItems } from '../data/gallery';
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
-import { Button } from '../components/common/Button';
 import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
+import { handleImageError } from '../lib/images';
 
 export const Gallery = () => {
   useSEOMetaTags({
-    title: 'VediqPath Gallery | Children Learning, Stories & Community',
-    description: 'Browse our gallery of VediqPath sessions, events and community moments showcasing children learning and growing.',
-    keywords: 'vediqpath gallery, children learning, yoga classes, cultural events',
+    title: 'VedicNest Gallery | Children Learning, Stories & Community',
+    description: 'Browse our gallery of VedicNest sessions, events and community moments showcasing children learning and growing.',
+    keywords: 'vedicnest gallery, children learning, yoga classes, cultural events',
   });
 
   return (
@@ -33,7 +32,7 @@ export const Gallery = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="body-lg text-vedic-700"
             >
-              Glimpses of VediqPath in action — children learning, creating, moving and growing.
+              Glimpses of VedicNest in action — children learning, creating, moving and growing.
             </motion.p>
           </div>
         </Container>
@@ -51,6 +50,7 @@ export const Gallery = () => {
                 >
                   <img
                     src={item.image}
+                    onError={handleImageError}
                     alt={item.alt}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
@@ -64,27 +64,6 @@ export const Gallery = () => {
                 </motion.div>
               </AnimatedSection>
             ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Instagram CTA */}
-      <Section className="bg-gradient-to-r from-vedic-600 to-saffron-600 text-cream-50">
-        <Container>
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="heading-section text-cream-50 mb-4">See More on Instagram</h2>
-            <p className="body-lg text-cream-100 mb-8">
-              Follow @vediqpath for daily updates, stories, behind-the-scenes moments and announcements.
-            </p>
-            <a
-              href="https://www.instagram.com/vediqpath/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-cream-50 text-vedic-600 px-8 py-3 rounded-lg font-medium hover:bg-cream-100 transition-colors"
-            >
-              <Instagram size={24} />
-              Follow VediqPath
-            </a>
           </div>
         </Container>
       </Section>
@@ -119,27 +98,6 @@ export const Gallery = () => {
         </Container>
       </Section>
 
-      {/* Share Your Story */}
-      <Section className="bg-white">
-        <Container>
-          <div className="card p-12 text-center bg-gradient-to-br from-vedic-600 to-saffron-600 border-2 border-saffron-400">
-            <h2 className="heading-section mb-4 text-cream-50">Share Your VediqPath Story</h2>
-            <p className="body-lg text-cream-100 mb-8 max-w-2xl mx-auto">
-              Tag us @vediqpath in your photos and let us share your child's VediqPath journey. We love celebrating every moment of growth and joy!
-            </p>
-            <a
-              href="https://www.instagram.com/vediqpath/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <Button variant="primary" size="lg">
-                Visit Instagram
-              </Button>
-            </a>
-          </div>
-        </Container>
-      </Section>
     </>
   );
 };

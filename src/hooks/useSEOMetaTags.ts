@@ -13,9 +13,9 @@ export const useSEOMetaTags = ({
   title,
   description,
   image,
-  url = 'https://vediqpath.com',
+  url = typeof window === 'undefined' ? '' : window.location.href,
   type = 'website',
-  keywords = 'vediqpath, vedic learning, kids programs',
+  keywords = 'VedicNest, vedic learning, kids programs',
 }: MetaTagProps) => {
   useEffect(() => {
     // Update document title

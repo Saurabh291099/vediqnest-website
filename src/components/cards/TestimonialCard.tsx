@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { Testimonial } from '../../types';
+import { handleImageError } from '../../lib/images';
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -27,6 +28,7 @@ export const TestimonialCard = ({ testimonial, index = 0 }: TestimonialCardProps
       {testimonial.avatar && (
         <img
           src={testimonial.avatar}
+          onError={handleImageError}
           alt={testimonial.author}
           className="w-12 h-12 rounded-full object-cover"
         />

@@ -10,8 +10,8 @@ import { useSEOMetaTags } from '../hooks/useSEOMetaTags';
 
 export const Events = () => {
   useSEOMetaTags({
-    title: 'VediqPath Events & Cultural Experiences | Noida',
-    description: 'Discover VediqPath\'s devotional and cultural experiences including bhajan gatherings and community events for families.',
+    title: 'VedicNest Events & Cultural Experiences | Noida',
+    description: 'Discover devotional and cultural experiences from VedicNest, including bhajan gatherings and community events for families.',
     keywords: 'bhajans kids, devotional events, cultural gatherings, family events Noida',
   });
 
@@ -29,7 +29,7 @@ export const Events = () => {
               Where Tradition Comes Alive
             </h1>
             <p className="body-lg text-vedic-700">
-              Beyond weekends, VediqPath creates vibrant cultural and devotional experiences where families connect, celebrate and experience the richness of Indian traditions together.
+              Beyond weekends, VedicNest creates vibrant cultural and devotional experiences where families connect, celebrate and experience the richness of Indian traditions together.
             </p>
           </motion.div>
         </Container>
@@ -118,7 +118,7 @@ export const Events = () => {
       <Section className="bg-white">
         <Container>
           <SectionHeading
-            title="Why Attend VediqPath Events?"
+            title="Why Attend VedicNest Events?"
             subtitle="Benefits for your family"
           />
 
