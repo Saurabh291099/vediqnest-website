@@ -23,7 +23,7 @@ export const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-cream-50 pt-20 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 min-h-[90vh] flex items-center">
+      <section className="relative overflow-hidden bg-cream-50 py-14 sm:py-20 md:py-24 lg:py-32 min-h-[90vh] flex items-center">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Content */}
@@ -59,7 +59,7 @@ export const Home = () => {
                 </Link>
               </div>
 
-              <div className="flex items-center gap-6 text-sm text-vedic-600 font-medium">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-vedic-600 font-medium">
                 <div>✓ Ages 6–12</div>
                 <div>✓ Weekend Program</div>
                 <div>✓ Noida</div>
